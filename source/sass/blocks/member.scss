@@ -1,0 +1,79 @@
+.member {
+  width: 260px;
+  font-size: 14px;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 1150px) {
+    font-size: 12px;
+  }
+
+  &:hover {
+    & .member__description {
+      background-color: rgba(16, 38, 84, 0.89);
+      top: 0;
+      transition-duration: 0.5s;
+    }
+
+    & .member__details {
+      display: block;
+    }
+  }
+}
+
+.member__description {
+  position: absolute;
+  padding-top: 19.9%;
+  width: 100%;
+  height: 100%;
+  top: 66%;
+  left: 0;
+}
+
+.member__name {
+  @include indent-reset();
+  margin-bottom: -3px;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3em;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.member__details {
+  display: none;
+}
+
+.member__sport {
+  @include indent-reset();
+  margin-bottom: 12.6%;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.13em;
+  line-height: 150%;
+  color: #b6bdcc;
+}
+
+.member__achivment {
+  @include indent-reset();
+  position: relative;
+  margin-bottom: 5.1%;
+  padding: 0 5px 0 27.7%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 150%;
+  color: #ffffff;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    background: url("../img/ellipse.svg") no-repeat 50% 50%;
+    top: 16.2%;
+    left: 21.1%;
+  }
+}

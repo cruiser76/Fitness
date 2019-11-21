@@ -1,0 +1,100 @@
+.gym {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+}
+
+.gym__description {
+  width: 355px;
+  flex-shrink: 0;
+  margin-left: 60px;
+  margin-right: auto;
+}
+
+.gym__title {
+  @include indent-reset();
+  padding-top: 45px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+}
+
+.gym__lead {
+  @include indent-reset();
+  padding-top: 10px;
+  padding-bottom: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #102654;
+}
+
+.gym__text {
+  @include indent-reset();
+  padding-top: 9px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #102654;
+}
+
+.gym__images {
+  position: relative;
+  width: 724px;
+  padding-left: 5.5%;
+  padding-bottom: 9.9%;
+}
+
+.gym__video {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 54, 122, 0.5);
+  }
+
+  & a {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    width: 100px;
+    height: 100px;
+    padding: 12px;
+    border-radius: 50%;
+    background-image: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+    background-clip: content-box;
+    border: 2px solid transparent;
+    border-image-source: url("../img/border-img.png");
+    border-image-slice: fill 1.5;
+
+    &:hover {
+      background-image: linear-gradient(44.89deg, #b80027 25.38%, #003d85 74.89%);
+
+      & svg {
+        fill: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+
+  & svg {
+    margin: auto;
+    margin-right: 27px;
+  }
+}

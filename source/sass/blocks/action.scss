@@ -1,0 +1,94 @@
+.action {
+  padding-top: 117px;
+}
+
+.action__title {
+  @include indent-reset();
+  padding-bottom: 54px;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+}
+
+.action__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.action__promo {
+  width: 48.4%;
+  max-height: 462px;
+  background: $blue url("../img/bg-action-desktop@1x.jpg") no-repeat right 0 top 0;
+  background-size: auto auto;
+  margin-bottom: 40px;
+}
+
+.action__description {
+  height: 100%;
+  width: 50.1%;
+  background-color: $red;
+  padding: 33px 35px 33px 45px;
+}
+
+.action__duration {
+  @include indent-reset();
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 156%;
+  color: #ffffff;
+}
+
+.action__price {
+  @include indent-reset();
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 87%;
+  color: #ffffff;
+}
+
+.action__lead {
+  @include indent-reset();
+  padding-top: 26px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: #ffffff;
+  margin-bottom: 91%;
+}
+
+.action__link {
+  display: inline-block;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 10px;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.action__inner {
+  width: 48.2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.action__item {
+  margin-bottom: 40px;
+}

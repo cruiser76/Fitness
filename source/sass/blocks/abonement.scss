@@ -1,0 +1,63 @@
+.abonement {
+  position: relative;
+  width: 360px;
+  height: 448px;
+  padding: 4.8% 0 0;
+  background: #ffffff;
+  border: 7px solid transparent;
+
+  &::after {
+    position: absolute;
+    top: 193px;
+    left: 21%;
+    content: attr(data-cost);
+    font-weight: bold;
+    font-size: 100px;
+    color: rgba(232, 232, 232, 0.4);
+    z-index: 1;
+  }
+
+  &:hover {
+    border-image: linear-gradient(to right bottom, $red 0%, $blue 100%);
+    border-image-slice: 1;
+  }
+}
+
+.abonement__title {
+  @include indent-reset();
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 29px;
+  text-align: center;
+  color: #102654;
+}
+
+.abonement__count {
+  @include indent-reset();
+  padding-top: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #495a7d;
+  text-align: center;
+}
+
+.abonement__cost {
+  @include indent-reset();
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 34px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 150%;
+  color: #103aae;
+  text-align: center;
+  z-index: 10000;
+}
+
+.abonement__btn {
+  margin: 0 auto;
+}

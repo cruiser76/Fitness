@@ -1,0 +1,11 @@
+.logo a {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

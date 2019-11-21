@@ -1,0 +1,77 @@
+.reviews {
+  padding-bottom: 120px;
+}
+
+.reviews__title {
+  @include indent-reset();
+  padding-top: 76px;
+  padding-bottom: 55px;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+}
+
+.reviews__list {
+  width: 560px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.reviews__item {
+  background: $blue;
+  display: flex;
+  align-items: flex-start;
+  padding: 54px 58px 57px 62px;
+
+  & img {
+    padding-top: 8px;
+    display: block;
+  }
+}
+
+.reviwes__info {
+  padding-left: 28px;
+  width: 390px;
+}
+
+.reviews__user {
+  @include indent-reset();
+  padding-bottom: 12px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.reviews__text {
+  @include indent-reset();
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.reviews__btn {
+  position: absolute;
+  border: none;
+  background: transparent;
+  top: 42.8%;
+  cursor: pointer;
+
+  &--left {
+    left: -11.2%;
+  }
+
+  &--right {
+    right: -11.2%;
+  }
+
+  &:hover svg {
+    stroke: #000000;
+  }
+}

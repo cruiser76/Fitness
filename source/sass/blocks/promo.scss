@@ -1,0 +1,93 @@
+.promo {
+  margin-top: 121px;
+  height: 500px;
+  background: $blue url("../img/bg-application-desktop@1x.jpg") no-repeat 85.3% 50%;
+  background-clip: content-box;
+}
+
+.promo__title {
+  @include indent-reset();
+  width: 60%;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.promo__description {
+  width: 500px;
+  padding: 78px 78px 86px 76px;
+  background-color: $red;
+}
+
+.promo__inner {
+  padding-left: 2px;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  margin-bottom: 15px;
+}
+
+.promo__datetime {
+  width: 94px;
+}
+
+.promo__date {
+  margin-bottom: 16px;
+}
+
+.promo__date-inner {
+  display: flex;
+  width: 67px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-right: 9px;
+  border-top: 1px solid #ffffff;
+}
+
+.promo__contain {
+  @include indent-reset();
+  padding: 3px 0 4px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.promo__details {
+  @include indent-reset();
+  width: auto;
+  padding-top: 2px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 109%;
+  color: #ffffff;
+
+  &--time {
+    border-top: 1px solid #ffffff;
+  }
+}
+
+.promo__month {
+  @include indent-reset();
+  margin: 2px 0 0 9px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.promo__lead {
+  @include indent-reset();
+  padding-left: 2px;
+  margin-bottom: 44px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+}

@@ -1,0 +1,16 @@
+.social {
+  @include list-reset();
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__item {
+  & svg {
+    fill: #ffffff;
+  }
+
+  &:hover svg {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}

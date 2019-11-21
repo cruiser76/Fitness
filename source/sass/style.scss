@@ -1,3 +1,23 @@
-h1 {
-  color: red;
-}
+@import "./normalize.scss";
+@import "./variables.scss";
+@import "./scaffolding.scss";
+@import "./mixins.scss";
+@import "./blocks/container.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/btn.scss";
+@import "./blocks/header.scss";
+@import "./blocks/gym.scss";
+@import "./blocks/abonement.scss";
+@import "./blocks/pass.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/coach.scss";
+@import "./blocks/member.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/action.scss";
+@import "./blocks/offer.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/form.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/social.scss";

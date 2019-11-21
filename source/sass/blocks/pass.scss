@@ -1,0 +1,56 @@
+.pass {
+  background: #f8f9fc;
+  padding-bottom: 118px;
+}
+
+.pass__title {
+  @include indent-reset();
+  padding-top: 115px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #102654;
+}
+
+.pass__duration {
+  width: 342px;
+  margin: 0 auto 40px;
+  padding-top: 38px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  align-items: flex-end;
+}
+
+.pass__btn {
+  @include indent-reset();
+  margin-bottom: -2px;
+  display: block;
+  padding-bottom: 10px;
+  width: auto;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  color: #102654;
+  cursor: pointer;
+
+  &--active {
+    border-bottom: 2px solid $red;
+  }
+}
+
+.pass__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pass__item {
+  width: 31%;
+}

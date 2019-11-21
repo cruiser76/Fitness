@@ -1,0 +1,34 @@
+.footer {
+  font: inherit;
+  border-top: 1px solid #102654;
+}
+
+.footer__top {
+  display: flex;
+}
+
+.footer__form {
+  width: 50%;
+  background: #102654;
+  padding-bottom: 48px;
+}
+
+.footer__contacts {
+  width: 50%;
+}
+
+.footer__bottom {
+  background: #030a1a;
+}
+
+.footer__bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 41px;
+  padding-bottom: 36px;
+}
+
+.footer__nav {
+  margin-left: 23px;
+}

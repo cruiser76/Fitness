@@ -1,0 +1,45 @@
+.coach {
+  margin-top: 116px;
+  margin-bottom: 120px;
+  position: relative;
+}
+
+.coach__title {
+  @include indent-reset();
+  padding-left: 2px;
+  padding-bottom: 54px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+}
+
+.coach__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.coach__item {
+  width: 22.4%;
+}
+
+.coach__btn {
+  position: absolute;
+  border: none;
+  background: transparent;
+  top: 58.3%;
+  cursor: pointer;
+
+  &--left {
+    left: 3%;
+  }
+
+  &--right {
+    right: 3%;
+  }
+
+  &:hover svg {
+    stroke: #000000;
+  }
+}

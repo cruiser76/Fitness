@@ -1,0 +1,21 @@
+.nav {
+  width: 432px;
+}
+
+.nav__list {
+  @include list-reset();
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__item a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
