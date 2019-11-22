@@ -14,3 +14,10 @@
     fill: rgba(255, 255, 255, 0.3);
   }
 }
+
+@media (max-width: $tablet) {
+  .social {
+    width: 100px;
+    padding-top: 3px;
+  }
+}

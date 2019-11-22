@@ -45,3 +45,21 @@
     }
   }
 }
+
+@media (max-width: $tablet) {
+  .btn {
+    width: 207px;
+
+    &--header {
+      width: 183px;
+    }
+
+    &--promo {
+      padding: 12px 0;
+      font-size: 10px;
+      line-height: 12px;
+      width: 206px;
+      border-width: 2px;
+    }
+  }
+}

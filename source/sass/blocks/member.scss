@@ -77,3 +77,13 @@
     left: 21.1%;
   }
 }
+
+@media (max-width: $tablet) {
+  .member {
+    width: 270px;
+
+    & img {
+      width: 270px;
+    }
+  }
+}

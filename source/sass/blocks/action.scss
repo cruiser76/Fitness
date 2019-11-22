@@ -32,7 +32,7 @@
   height: 100%;
   width: 50.1%;
   background-color: $red;
-  padding: 33px 35px 33px 45px;
+  padding: 33px 35px 35px 45px;
 }
 
 .action__duration {
@@ -91,4 +91,52 @@
 
 .action__item {
   margin-bottom: 40px;
+}
+
+@media (max-width: $tablet) {
+  .action {
+    padding-top: 96px;
+  }
+
+  .action__title {
+    font-size: 42px;
+    line-height: 42px;
+    padding-bottom: 45px;
+  }
+
+  .action__list {
+    display: block;
+  }
+
+  .action__promo {
+    width: 100%;
+    background: none;
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  .action__description {
+    width: 41.3%;
+    padding-bottom: 33px;
+  }
+
+  .action__promo-img {
+    width: 58.7%;
+    height: 462px;
+    background: #1c3374 url("../img/bg-action-tablet@1x.jpg") no-repeat right 0 top 0;
+    background-size: cover;
+  }
+
+  .action__lead {
+    margin-bottom: 185px;
+  }
+
+  .action__inner {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  div.action__item {
+    width: 47.8%;
+  }
 }

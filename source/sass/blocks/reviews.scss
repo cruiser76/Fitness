@@ -75,3 +75,23 @@
     stroke: #000000;
   }
 }
+
+@media (max-width: $tablet) {
+  .reviews {
+    padding-bottom: 101px;
+  }
+
+  .reviews__title {
+    padding: 55px 0 45px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .reviews__list {
+    width: 566px;
+  }
+
+  .reviews__item {
+    padding: 54px 58px 57px 65px;
+  }
+}

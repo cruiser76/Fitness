@@ -125,3 +125,62 @@
     color: rgba(255, 255, 255, 0.3);
   }
 }
+
+@media (max-width: $tablet) {
+  .header {
+    background: url("../img/bg-header-tablet@1x.png") no-repeat 50% 50%;
+    background-size: cover;
+  }
+
+  .header__container {
+    background: transparent url("../../img/bg-header-foto-tablet@1x.jpg") no-repeat 400px 50%;
+    padding-bottom: 104px;
+  }
+
+  .header__top {
+    padding-top: 37px;
+  }
+
+  .header__phone {
+    width: 139px;
+
+    & a {
+      font-size: 24px;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  .header__bottom {
+    padding-top: 69px;
+    padding-left: 0;
+  }
+
+  .header__town {
+    font-size: 34px;
+    line-height: 34px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+
+  .header__description {
+    width: 324px;
+  }
+
+  .header__description-inner {
+    padding-top: 3px;
+    margin-bottom: 45px;
+  }
+
+  .header__description h1 {
+    font-size: 86px;
+    line-height: 86px;
+  }
+
+  .header__fiatures {
+    padding-bottom: 12px;
+  }
+
+  .header__social {
+    display: none;
+  }
+}

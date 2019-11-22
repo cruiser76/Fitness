@@ -16,8 +16,19 @@
 }
 
 .contacts__list {
+  position: relative;
   padding: 0 0 0 18.3%;
   display: flex;
+
+  &::after {
+    position: absolute;
+    background: url("../img/vertical-line.svg") no-repeat 50% 50%;
+    content: "";
+    width: 1px;
+    height: 103px;
+    left: 51.8%;
+    top: 5px;
+  }
 }
 
 .contacts__block {
@@ -56,4 +67,42 @@
   font-size: 14px;
   line-height: 21px;
   color: #102654;
+}
+
+@media (max-width: $tablet) {
+  .contacts__container {
+    margin: 0 auto;
+  }
+
+  .contacts__title {
+    font-size: 42px;
+    line-height: 42px;
+    padding-left: 91px;
+    margin-bottom: 37px;
+  }
+
+  .contacts__type {
+    font-size: 20px;
+    line-height: 150%;
+    margin: 0 0 6px;
+  }
+
+  .contacts__text {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+
+  .contacts__list {
+    padding-left: 90px;
+
+    &::after {
+      height: 131px;
+      left: 52.2%;
+      top: 7px;
+    }
+  }
+
+  .contacts__block:nth-of-type(2n) {
+    padding-left: 70px;
+  }
 }

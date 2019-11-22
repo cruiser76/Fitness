@@ -22,6 +22,10 @@
 
 div.coach__item {
   width: 22.4%;
+
+  &:nth-of-type(n + 5) {
+    display: none;
+  }
 }
 
 .coach__btn {
@@ -41,5 +45,46 @@ div.coach__item {
 
   &:hover svg {
     stroke: #000000;
+  }
+}
+
+@media (max-width: $tablet) {
+  .coach {
+    margin-top: 95px;
+  }
+
+  .coach__title {
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+    padding: 0 0 45px 0;
+  }
+
+  .coach__list {
+    margin: 0 auto;
+    width: 83.4%;
+  }
+
+  div.coach__item {
+    width: 268px;
+    height: 294px;
+    display: block;
+
+    &:nth-of-type(n + 3) {
+      display: none;
+    }
+  }
+
+  .coach__btn {
+    background: transparent;
+    top: 56.5%;
+
+    &--left {
+      left: 5%;
+    }
+
+    &--right {
+      right: 5%;
+    }
   }
 }

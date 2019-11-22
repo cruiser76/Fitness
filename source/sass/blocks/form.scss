@@ -79,3 +79,32 @@
     color: #102654;
   }
 }
+
+@media (max-width: $tablet) {
+  .form__container {
+    margin: 0 auto;
+  }
+
+  .form__title {
+    padding-top: 65px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .form__container form {
+    padding-left: 13%;
+  }
+
+  .form__btn {
+    width: 475px;
+  }
+
+  .form__user-info {
+    margin-bottom: 28px;
+  }
+
+  .form__user-info input {
+    width: 207px;
+    margin-right: 30px;
+  }
+}
