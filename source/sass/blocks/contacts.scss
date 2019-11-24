@@ -106,3 +106,36 @@
     padding-left: 70px;
   }
 }
+
+@media (max-width: $mobile) {
+  .contacts__container {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .contacts__title {
+    padding-left: 0;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 38px;
+  }
+
+  .contacts__list {
+    width: 100%;
+    padding: 0;
+    display: block;
+
+    &::after {
+      background: none;
+    }
+  }
+
+  .contacts__block {
+    width: 100%;
+
+    &:nth-of-type(2n) {
+      padding: 0;
+    }
+  }
+}

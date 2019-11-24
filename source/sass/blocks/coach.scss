@@ -88,3 +88,41 @@ div.coach__item {
     }
   }
 }
+
+@media (max-width: $mobile) {
+  .coach {
+    margin-top: 66px;
+  }
+
+  .coach__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  div.coach__item {
+    margin: 0 auto;
+    width: 226px;
+    height: 274px;
+
+    &:nth-of-type(n + 2) {
+      display: none;
+    }
+  }
+
+  .coach__btn-img svg {
+    width: 10px;
+    height: 19px;
+  }
+
+  .coach__btn {
+    top: 58.1%;
+
+    &--left {
+      left: 2.6%;
+    }
+
+    &--right {
+      right: 2.6%;
+    }
+  }
+}

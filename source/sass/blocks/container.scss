@@ -10,3 +10,10 @@
     padding: 0 45px;
   }
 }
+
+@media (max-width: $mobile) {
+  .container {
+    min-width: 320px;
+    padding: 0 15px;
+  }
+}

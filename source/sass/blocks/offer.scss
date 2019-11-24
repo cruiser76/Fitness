@@ -56,3 +56,14 @@
     flex-grow: 0;
   }
 }
+
+@media (max-width: $mobile) {
+  .offer {
+    padding: 30px 20px 5px;
+    text-align: center;
+  }
+
+  .offer__link {
+    margin: 27px auto 0;
+  }
+}

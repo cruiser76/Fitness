@@ -140,3 +140,47 @@
     width: 47.8%;
   }
 }
+
+@media (max-width: $mobile) {
+  .action {
+    padding-top: 71px;
+  }
+
+  .action__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .action__promo {
+    display: block;
+    max-height: none;
+  }
+
+  .action__description {
+    width: 100%;
+    padding: 33px 49px 35px;
+    text-align: center;
+  }
+
+  .action__promo-img {
+    width: 100%;
+    min-height: 299px;
+    height: auto;
+    background: #1c3374 url("../img/bg-action-mobile@1x.jpg") no-repeat right 0 top 0;
+    background-size: cover;
+  }
+
+  .action__lead {
+    padding: 20px 0 0;
+    margin: 0 0 25px;
+  }
+
+  .action__inner {
+    display: block;
+  }
+
+  div.action__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}

@@ -1,5 +1,9 @@
 .nav {
-  width: 432px;
+  width: 796px;
+}
+
+.nav__logo {
+  margin-right: 236px;
 }
 
 .nav__list {
@@ -8,7 +12,7 @@
   justify-content: space-between;
 }
 
-.nav__item a {
+.nav__item > a {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -22,6 +26,32 @@
 
 @media (max-width: $tablet) {
   .nav {
-    width: 390px;
+    width: 535px;
+  }
+
+  .nav__logo {
+    margin-right: 32px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .nav {
+    width: 290px;
+  }
+
+  .nav__list {
+    display: block;
+    column-count: 2;
+    column-gap: 31px;
+  }
+
+  .nav__item {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+
+  .nav__item > a {
+    font-size: 16px;
+    line-height: 19px;
   }
 }

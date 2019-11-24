@@ -63,3 +63,17 @@
     }
   }
 }
+
+@media (max-width: $mobile) {
+  .btn {
+    width: 206px;
+
+    &--header {
+      width: 290px;
+    }
+
+    &--promo {
+      padding: 13px 0;
+    }
+  }
+}

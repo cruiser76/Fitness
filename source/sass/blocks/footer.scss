@@ -29,10 +29,6 @@
   padding-bottom: 36px;
 }
 
-.footer__nav {
-  margin-left: 23px;
-}
-
 @media (max-width: $tablet) {
   .footer {
     border: none;
@@ -55,8 +51,26 @@
     padding-top: 40px;
     padding-bottom: 39px;
   }
+}
+
+@media (max-width: $mobile) {
+  .footer__form {
+    padding-bottom: 67px;
+  }
+
+  .footer__bottom-container {
+    width: 320px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 46px;
+    padding-bottom: 41px;
+  }
 
   .footer__nav {
-    margin-left: 18px;
+    margin: 0 auto 20px;
+  }
+
+  .footer__social {
+    margin: 0 auto;
   }
 }

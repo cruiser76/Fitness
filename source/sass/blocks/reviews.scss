@@ -95,3 +95,64 @@
     padding: 54px 58px 57px 65px;
   }
 }
+
+@media (max-width: $mobile) {
+  .reviews {
+    padding-bottom: 70px;
+  }
+
+  .reviews__title {
+    font-size: 32px;
+    line-height: 32px;
+    padding: 37px 0 45px;
+  }
+
+  .reviews__list {
+    width: 100%;
+  }
+
+  .reviwes__info {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .reviews__item {
+    position: relative;
+    width: 78%;
+    margin: 0 auto;
+    padding: 47px 22px 36px;
+
+    & img {
+      padding: 0;
+      width: 68px;
+      height: 68px;
+      position: absolute;
+      left: 42px;
+      top: 40px;
+    }
+  }
+
+  .reviews__user {
+    line-height: 135%;
+    text-align: left;
+    padding: 0 26px 23px 102px;
+  }
+
+  .reviews__btn-img svg {
+    width: 10px;
+    height: 19px;
+  }
+
+  .reviews__btn {
+    top: 46.4%;
+
+    &--left {
+      left: -2.5%;
+    }
+
+    &--right {
+      right: -2.5%;
+    }
+  }
+}

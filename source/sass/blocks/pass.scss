@@ -86,3 +86,32 @@
     margin: 0 auto 40px;
   }
 }
+
+@media (max-width: $mobile) {
+  .pass {
+    padding-bottom: 34px;
+  }
+
+  .pass__title {
+    padding-top: 137px;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+  }
+
+  .pass__duration {
+    width: 290px;
+    padding-top: 25px;
+    margin: 0 auto 34px;
+  }
+
+  .pass__btn {
+    padding: 0 0 11px;
+    font-size: 16px;
+  }
+
+  .pass__item {
+    width: 100%;
+    margin: 0 auto 35px;
+  }
+}

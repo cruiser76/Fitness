@@ -8,8 +8,10 @@
 
   &::after {
     position: absolute;
-    top: 193px;
-    left: 21%;
+    top: 50%;
+    margin-top: -27px;
+    left: 50%;
+    margin-left: -102px;
     content: attr(data-cost);
     font-weight: bold;
     font-size: 100px;
@@ -70,7 +72,44 @@
     margin-bottom: 40px;
 
     &::after {
-      left: 26.5%;
+      margin-right: -22px;
+      margin-left: -101px;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .abonement {
+    width: 290px;
+    height: auto;
+    padding: 15.2% 0 46px;
+    margin-bottom: 40px;
+
+    &::after {
+      font-size: 80px;
+      line-height: 150%;
+      margin-top: -74px;
+    }
+  }
+
+  .abonement__title {
+    font-size: 22px;
+    line-height: 110.16%;
+  }
+
+  .abonement__count {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .abonement__cost {
+    font-size: 48px;
+    line-height: 150%;
+    padding: 53px 0 30px 5px;
+
+    & svg {
+      width: 24px;
+      height: 33px;
     }
   }
 }

@@ -170,3 +170,63 @@
     }
   }
 }
+
+@media (max-width: $mobile) {
+  .gym {
+    padding: 68px 0 0;
+  }
+
+  .gym__description {
+    padding: 0 15px 33px;
+  }
+
+  .gym__title {
+    font-size: 32px;
+    line-height: 32px;
+    text-align: left;
+  }
+
+  .gym__lead {
+    width: 100%;
+    padding: 7px 0 14px;
+  }
+
+  .gym__text {
+    padding: 10px 27px 0 0;
+    text-align: left;
+  }
+
+  .gym__images {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .gym__images > img {
+    margin-bottom: 40px;
+    height: auto;
+    min-height: 313px;
+  }
+
+  .gym__video {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    min-height: 167px;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      height: auto;
+    }
+
+    & a {
+      margin-left: -36.5px;
+      margin-top: -36.5px;
+      width: 73px;
+      height: 73px;
+      padding: 8px;
+    }
+  }
+}
