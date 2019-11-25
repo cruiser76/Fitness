@@ -15,16 +15,17 @@
   color: #102654;
 }
 
-.coach__list {
+div.coach__list {
   display: flex;
   justify-content: space-between;
 }
 
 div.coach__item {
   width: 22.4%;
+  display: none;
 
-  &:nth-of-type(n + 5) {
-    display: none;
+  &--desktop {
+    display: block;
   }
 }
 
@@ -68,10 +69,10 @@ div.coach__item {
   div.coach__item {
     width: 268px;
     height: 294px;
-    display: block;
+    display: none;
 
-    &:nth-of-type(n + 3) {
-      display: none;
+    &--tablet {
+      display: block;
     }
   }
 
@@ -103,9 +104,10 @@ div.coach__item {
     margin: 0 auto;
     width: 226px;
     height: 274px;
+    display: none;
 
-    &:nth-of-type(n + 2) {
-      display: none;
+    &--mobile {
+      display: block;
     }
   }
 

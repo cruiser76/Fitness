@@ -1,5 +1,4 @@
 .promo {
-  margin-top: 121px;
   height: 500px;
   background: $blue url("../img/bg-application-desktop@1x.jpg") no-repeat 85.3% 50%;
   background-clip: content-box;
@@ -95,8 +94,7 @@
 @media (max-width: $tablet) {
   .promo {
     background: none;
-    margin-top: 102px;
-    height: 290px;
+    height: 293px;
     display: flex;
   }
 
@@ -113,7 +111,7 @@
 
   .promo__description {
     width: 43%;
-    padding: 44px 0 51px 43px;
+    padding: 47px 0 51px 43px;
   }
 
   .promo__contain {
@@ -148,7 +146,7 @@
 
   .promo__img {
     width: 57%;
-    height: 291px;
+    height: 293px;
     background: $blue url("../img/bg-application-tablet@1x.jpg") no-repeat 88.3% 50%;
     background-clip: content-box;
     background-size: cover;
@@ -157,7 +155,6 @@
 
 @media (max-width: $mobile) {
   .promo {
-    margin-top: 72px;
     height: 584px;
     display: block;
   }

@@ -1,10 +1,30 @@
 .pass {
-  background: #f8f9fc;
+  background: white;
+  position: relative;
+  padding-bottom: 121px;
+}
+
+.pass__container {
   padding-bottom: 118px;
+  background: #f8f9fc;
+
+  &::after {
+    background: url("../img/bg-plate-desktop@1x.png") no-repeat 100% 106%;
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: -30px;
+    width: 287px;
+    height: 494px;
+    z-index: 1;
+  }
 }
 
 .pass__title {
   @include indent-reset();
+  margin: 0 auto;
+  padding: 0 103px;
+  max-width: $desktop;
   padding-top: 115px;
   font-family: "Bebas Neue", sans-serif;
   font-size: 49px;
@@ -46,9 +66,14 @@
 }
 
 .pass__list {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 103px;
+  max-width: $desktop;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .pass__item {
@@ -57,10 +82,23 @@
 
 @media (max-width: $tablet) {
   .pass {
-    padding-bottom: 61px;
+    padding-bottom: 100px;
+  }
+
+  .pass__container {
+    padding-bottom: 60px;
+
+    &::after {
+      background: url("../img/bg-plate-tablet@1x.png") no-repeat 100% 106%;
+      right: 0;
+      bottom: -27px;
+      width: 347px;
+      height: 444px;
+    }
   }
 
   .pass__title {
+    padding: 0 45px;
     padding-top: 96px;
     font-size: 42px;
     line-height: 42px;
@@ -79,6 +117,7 @@
 
   .pass__list {
     display: block;
+    padding: 0 45px;
   }
 
   .pass__item {
@@ -89,10 +128,19 @@
 
 @media (max-width: $mobile) {
   .pass {
-    padding-bottom: 34px;
+    padding-bottom: 69px;
+  }
+
+  .pass__container {
+    padding-bottom: 39px;
+
+    &::after {
+      background: none;
+    }
   }
 
   .pass__title {
+    padding: 0 15px;
     padding-top: 137px;
     font-size: 32px;
     line-height: 32px;
@@ -108,6 +156,10 @@
   .pass__btn {
     padding: 0 0 11px;
     font-size: 16px;
+  }
+
+  .pass__list {
+    padding: 0 15px;
   }
 
   .pass__item {
