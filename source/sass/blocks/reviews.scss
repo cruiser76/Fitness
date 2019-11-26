@@ -2,6 +2,22 @@
   padding-bottom: 120px;
 }
 
+.swiper1 {
+  width: 560px;
+}
+
+.swiper-button-next {
+  &::after {
+    display: none;
+  }
+}
+
+.swiper-button-prev {
+  &::after {
+    display: none;
+  }
+}
+
 .reviews__title {
   @include indent-reset();
   padding-top: 76px;
@@ -64,7 +80,7 @@
   position: absolute;
   border: none;
   background: transparent;
-  top: 42.8%;
+  top: 51.2%;
   cursor: pointer;
 
   &--left {
@@ -95,6 +111,10 @@
     width: 566px;
   }
 
+  .swiper1 {
+    width: 566px;
+  }
+
   .reviews__item {
     padding: 54px 58px 57px 65px;
   }
@@ -115,6 +135,10 @@
     width: 100%;
   }
 
+  .swiper1 {
+    width: 100%;
+  }
+
   .reviwes__info {
     width: 100%;
     padding: 0;
@@ -123,7 +147,7 @@
 
   .reviews__item {
     position: relative;
-    width: 78%;
+    width: 63%;
     margin: 0 auto;
     padding: 47px 22px 36px;
 
@@ -149,7 +173,7 @@
   }
 
   .reviews__btn {
-    top: 46.4%;
+    top: 50.4%;
 
     &--left {
       left: -2.5%;

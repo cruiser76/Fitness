@@ -1,72 +1,111 @@
 'use strict';
 var videoPreview = document.querySelector('.gym__video img');
 
-// слайдер с тренерами
-var slideCount = 0;
-var className = '';
-var SlideType = [
-  {className: 'coach__item--desktop', slideCount: 4},
-  {className: 'coach__item--tablet', slideCount: 2},
-  {className: 'coach__item--mobile', slideCount: 1}
-];
+var mySwiper = new Swiper ('.swiper1', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev1',
+    prevEl: '.swiper-button-next1',
+  },
+});
+
+var myTreners = {};
+
+window.addEventListener('resize', function() {
+
+  if (document.documentElement.clientWidth < 768 && myTreners.slidesPerView !== 1) {
+    videoPreview.src = 'img/video-preview-mobile@1x.jpg';
+    myTreners = new Swiper ('.swiper2', {
+      direction: 'horizontal',
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      slidesPerGroup: 1,
+      loopFillGroupWithBlank: true,
+      navigation: {
+        nextEl: '.swiper-button-prev2',
+        prevEl: '.swiper-button-next2',
+      },
+    });
+
+  } else if (document.documentElement.clientWidth > 767 && document.body.clientWidth < 1024 && myTreners.slidesPerView !== 2) {
+    myTreners = {};
+    myTreners = new Swiper ('.swiper2', {
+      direction: 'horizontal',
+      loop: true,
+      slidesPerView: 2,
+      spaceBetween: 30,
+      slidesPerGroup: 2,
+      loopFillGroupWithBlank: true,
+      navigation: {
+        nextEl: '.swiper-button-prev2',
+        prevEl: '.swiper-button-next2',
+      },
+    });
+
+  } else if (document.documentElement.clientWidth > 1023 && myTreners.slidesPerView !== 4) {
+    myTreners = {};
+    myTreners = new Swiper ('.swiper2', {
+      direction: 'horizontal',
+      loop: true,
+      slidesPerView: 4,
+      spaceBetween: 40,
+      slidesPerGroup: 4,
+      loopFillGroupWithBlank: true,
+      navigation: {
+        nextEl: '.swiper-button-prev2',
+        prevEl: '.swiper-button-next2',
+      },
+    });
+  }
+});
 
 if (document.body.clientWidth < 768) {
   videoPreview.src = 'img/video-preview-mobile@1x.jpg';
-  slideCount = SlideType[2].slideCount;
-  className = SlideType[2].className;
+  myTreners = new Swiper ('.swiper2', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    slidesPerGroup: 1,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: '.swiper-button-prev2',
+      prevEl: '.swiper-button-next2',
+    },
+  });
+
 } else if (document.body.clientWidth > 767 && document.body.clientWidth < 1024) {
-  slideCount = SlideType[1].slideCount;
-  className = SlideType[1].className;
+  myTreners = new Swiper ('.swiper2', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 0,
+    slidesPerGroup: 2,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: '.swiper-button-prev2',
+      prevEl: '.swiper-button-next2',
+    },
+  });
 } else if (document.body.clientWidth > 1023) {
-  slideCount = SlideType[0].slideCount;
-  className = SlideType[0].className;
+  myTreners = new Swiper ('.swiper2', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 40,
+    slidesPerGroup: 4,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: '.swiper-button-prev2',
+      prevEl: '.swiper-button-next2',
+    },
+  });
 }
-
-var coachLeftBtn = document.querySelector('.coach__btn--left');
-var coachRightBtn = document.querySelector('.coach__btn--right');
-
-var startIndex = 0;
-
-var onCoachLeftBtnClick = function () {
-  var coachList = document.querySelectorAll('.coach__item');
-
-  for (var i = startIndex; i < startIndex + slideCount; i++) {
-    if (i < coachList.length) {
-      coachList[i].classList.remove(className);
-    } else {
-      coachList[i - coachList.length].classList.remove(className);
-    }
-
-    if (i + slideCount < coachList.length) {
-      coachList[i + slideCount].classList.add(className);
-    } else {
-      coachList[i + slideCount - coachList.length].classList.add(className);
-    }
-  }
-  startIndex = (startIndex + slideCount) < coachList.length ? (startIndex + slideCount) : (startIndex + slideCount - coachList.length);
-};
-
-var onCoachRightBtnClick = function () {
-  var coachList = document.querySelectorAll('.coach__item');
-
-  for (var i = startIndex; i < startIndex + slideCount; i++) {
-    if (i < coachList.length) {
-      coachList[i].classList.remove(className);
-    } else {
-      coachList[i - coachList.length].classList.remove(className);
-    }
-
-    if (i - slideCount >= 0) {
-      coachList[i - slideCount].classList.add(className);
-    } else {
-      coachList[coachList.length + (i - slideCount)].classList.add(className);
-    }
-  }
-  startIndex = (startIndex - slideCount) >= 0 ? (startIndex - slideCount) : (coachList.length + (startIndex - slideCount));
-};
-
-coachLeftBtn.addEventListener('click', onCoachLeftBtnClick);
-coachRightBtn.addEventListener('click', onCoachRightBtnClick);
 
 // плавный якорь
 // выбираем все ссылки к якорю на странице
@@ -136,24 +175,15 @@ if (feedBackForm) {
   });
 }
 
-// слайдер с отзывами
-var startReviewIndex = 0;
-var reviewBtnLeft = document.querySelector('.reviews__btn--left');
-var reviewBtnRight = document.querySelector('.reviews__btn--right');
-
-var onReviewBtnLeftClick = function () {
-  var reviewItems = document.querySelectorAll('.reviews__item');
-  reviewItems[startReviewIndex].classList.add('reviews__item--hide');
-  startReviewIndex = (startReviewIndex + 1) < reviewItems.length ? startReviewIndex + 1 : startReviewIndex + 1 - reviewItems.length;
-  reviewItems[startReviewIndex].classList.remove('reviews__item--hide');
-};
-
-var onReviewBtnRightClick = function () {
-  var reviewItems = document.querySelectorAll('.reviews__item');
-  reviewItems[startReviewIndex].classList.add('reviews__item--hide');
-  startReviewIndex = (startReviewIndex - 1) < 0 ? reviewItems.length - 1 : startReviewIndex - 1;
-  reviewItems[startReviewIndex].classList.remove('reviews__item--hide');
-};
-
-reviewBtnLeft.addEventListener('click', onReviewBtnLeftClick);
-reviewBtnRight.addEventListener('click', onReviewBtnRightClick);
+// абонементы
+var passBtns = document.querySelectorAll('.pass__btn');
+var durationPass = document.querySelector('.pass__duration');
+durationPass.addEventListener('click', function(evt) {
+  if (evt.target.tagName !== 'BUTTON') {
+    return;
+  }
+  for (var i = 0; i < passBtns.length; i++) {
+    passBtns[i].classList.remove('pass__btn--active');
+  }
+  evt.target.classList.add('pass__btn--active');
+});

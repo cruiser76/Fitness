@@ -15,25 +15,25 @@
   color: #102654;
 }
 
-div.coach__list {
+.coach__list {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-div.coach__item {
-  width: 22.4%;
-  display: none;
+.swiper2 {
+  width: 100%;
+}
 
-  &--desktop {
-    display: block;
-  }
+div.coach__item {
+  width: 100%;
 }
 
 .coach__btn {
   position: absolute;
   border: none;
   background: transparent;
-  top: 58.3%;
+  top: 63.4%;
   cursor: pointer;
 
   &--left {
@@ -61,24 +61,21 @@ div.coach__item {
     padding: 0 0 45px 0;
   }
 
+  .swiper2 {
+    width: 83%;
+  }
+
   .coach__list {
-    margin: 0 auto;
-    width: 83.4%;
+    width: 100%;
   }
 
   div.coach__item {
-    width: 268px;
-    height: 294px;
-    display: none;
-
-    &--tablet {
-      display: block;
-    }
+    width: 269px;
   }
 
   .coach__btn {
     background: transparent;
-    top: 56.5%;
+    top: 62%;
 
     &--left {
       left: 5%;
@@ -100,15 +97,19 @@ div.coach__item {
     line-height: 32px;
   }
 
+  .swiper2 {
+    width: 77%;
+  }
+
+  .coach__list {
+    width: 100%;
+  }
+
+
   div.coach__item {
     margin: 0 auto;
     width: 226px;
     height: 274px;
-    display: none;
-
-    &--mobile {
-      display: block;
-    }
   }
 
   .coach__btn-img svg {

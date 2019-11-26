@@ -83,7 +83,8 @@
     width: 270px;
 
     & img {
-      width: 270px;
+      width: 268px;
+      height: 294px;
     }
   }
 }
@@ -91,6 +92,7 @@
 @media (max-width: $mobile) {
   .member {
     & img {
+      width: 226px;
       height: 100%;
     }
   }
