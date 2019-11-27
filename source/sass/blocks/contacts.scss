@@ -1,11 +1,11 @@
 .contacts__container {
+  padding-top: 65px;
   max-width: 683px;
   margin-right: auto;
 }
 
 .contacts__title {
   @include indent-reset();
-  padding-top: 65px;
   padding-left: 17.7%;
   font-family: "Bebas Neue", sans-serif;
   font-size: 49px;
@@ -22,7 +22,7 @@
 
   &::after {
     position: absolute;
-    background: url("../img/vertical-line.svg") no-repeat 50% 50%;
+    background: $blue url("../img/vertical-line.svg") no-repeat 50% 50%;
     content: "";
     width: 1px;
     height: 103px;
@@ -35,7 +35,7 @@
   width: 41.1%;
 
   &:nth-of-type(2n) {
-    padding-left: 60px;
+    margin-left: 60px;
   }
 }
 
@@ -103,7 +103,7 @@
   }
 
   .contacts__block:nth-of-type(2n) {
-    padding-left: 70px;
+    margin-left: 70px;
   }
 }
 
@@ -111,7 +111,7 @@
   .contacts__container {
     width: 320px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 66px 15px 0;
   }
 
   .contacts__title {
@@ -135,7 +135,7 @@
     width: 100%;
 
     &:nth-of-type(2n) {
-      padding: 0;
+      margin: 0;
     }
   }
 }

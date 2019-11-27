@@ -84,7 +84,7 @@ if (document.body.clientWidth < 768) {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 2,
-    spaceBetween: 0,
+    spaceBetween: 30,
     slidesPerGroup: 2,
     loopFillGroupWithBlank: true,
     navigation: {

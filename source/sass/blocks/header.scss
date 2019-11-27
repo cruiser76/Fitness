@@ -1,21 +1,15 @@
 .header {
-  background: url("../img/bg-header-desktop@1x.png") no-repeat 50% 50%;
-  background-size: cover;
+  width: 100%;
+  position: absolute;
+  top: 28px;
 }
 
 .header__container {
-  height: 100%;
-  background: transparent url("../../img/bg-header-foto-desktop@1x.jpg") no-repeat 563px 50%;
-  background-size: auto;
-  padding-bottom: 93px;
-  padding-top: 30px;
-}
-
-.header__top {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-
 }
+
 
 .header__phone {
   width: 155px;
@@ -37,106 +31,9 @@
   width: 90px;
 }
 
-.header__bottom {
-  display: flex;
-  padding-top: 109px;
-  padding-left: 18px;
-}
-
-.header__description {
-  width: 378px;
-  display: flex;
-  flex-direction: column;
-}
-
-.header__description p {
-  @include indent-reset();
-}
-
-.header__town {
-  font-family: "Bebas Neue", sans-serif;
-  text-align: right;
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
-
-.header__description-inner {
-  display: flex;
-  padding-top: 5px;
-  margin-bottom: 63px;
-}
-
-.header__description h1 {
-  @include indent-reset();
-  width: 378px;
-  font-family: "Bebas Neue", sans-serif;
-  text-transform: uppercase;
-  font-size: 109px;
-  line-height: 109px;
-  text-align: right;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
-
-.header__features {
-  width: 114px;
-  flex-shrink: 0;
-  align-self: flex-end;
-  margin-right: -50px;
-  padding-bottom: 20px;
-}
-
-.header__features p {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 150%;
-  text-align: right;
-  color: #ffffff;
-}
-
-.header__btn {
-  align-self: flex-end;
-}
-
-.header__social {
-  margin-left: auto;
-  align-self: flex-end;
-  display: flex;
-  flex-direction: column;
-}
-
-.header__social a {
-  display: block;
-  width: 14px;
-  font-family: "Roboto Condensed", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  align-items: center;
-  text-align: right;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-top: 18.3px;
-
-  &:hover {
-    color: rgba(255, 255, 255, 0.3);
-  }
-}
-
 @media (max-width: $tablet) {
   .header {
-    background: $blue url("../img/bg-header-tablet@1x.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-
-  .header__container {
-    background: transparent url("../../img/bg-header-foto-tablet@1x.jpg") no-repeat 400px 50%;
-    padding-bottom: 104px;
-    padding-top: 37px;
+    top: 38px;
   }
 
   .header__phone {
@@ -147,52 +44,11 @@
       letter-spacing: 0.02em;
     }
   }
-
-  .header__bottom {
-    padding-top: 69px;
-    padding-left: 0;
-  }
-
-  .header__town {
-    font-size: 34px;
-    line-height: 34px;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-  }
-
-  .header__description {
-    width: 324px;
-  }
-
-  .header__description-inner {
-    padding-top: 3px;
-    margin-bottom: 45px;
-  }
-
-  .header__description h1 {
-    font-size: 86px;
-    line-height: 86px;
-  }
-
-  .header__features {
-    padding-bottom: 12px;
-  }
-
-  .header__social {
-    display: none;
-  }
 }
 
 @media (max-width: $mobile) {
   .header {
-    background: url("../img/bg-header-mobile@1x.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-
-  .header__container {
-    background: none;
-    padding-bottom: 80px;
-    padding-top: 15px;
+    top: 15px;
   }
 
   .header__phone {
@@ -201,28 +57,5 @@
     & a {
       font-size: 20px;
     }
-  }
-
-  .header__description {
-    width: 290px;
-    margin: 0 auto;
-  }
-
-  .header__town {
-    font-size: 28px;
-    line-height: 28px;
-  }
-
-  .header__description h1 {
-    font-size: 78px;
-    line-height: 78px;
-  }
-
-  .header__description-inner {
-    padding-top: 9px;
-  }
-
-  .header__features {
-    padding-bottom: 8px;
   }
 }

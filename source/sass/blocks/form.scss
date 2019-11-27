@@ -8,12 +8,12 @@
   padding-left: 15%;
   padding-right: 5px;
   padding-bottom: 20px;
+  padding-top: 57px;
 }
 
 .form__title {
   @include indent-reset();
   font-family: "Bebas Neue", sans-serif;
-  padding-top: 57px;
   margin-bottom: 35px;
   font-size: 49px;
   line-height: 64px;
@@ -86,12 +86,12 @@
   }
 
   .form__title {
-    padding-top: 65px;
     font-size: 42px;
     line-height: 42px;
   }
 
   .form__container form {
+    padding-top: 65px;
     padding-left: 13%;
   }
 
@@ -113,7 +113,7 @@
   .form__container {
     margin: 0 auto;
     width: 320px;
-    padding: 0 15px;
+    padding: 66px 15px 0;
   }
 
   .form__title {

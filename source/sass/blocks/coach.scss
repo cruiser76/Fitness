@@ -51,14 +51,15 @@ div.coach__item {
 
 @media (max-width: $tablet) {
   .coach {
-    margin-top: 95px;
+    padding-top: 95px;
+    padding-bottom: 100px;
   }
 
   .coach__title {
+    margin-bottom: 45px;
     font-size: 42px;
     line-height: 42px;
     text-align: center;
-    padding: 0 0 45px 0;
   }
 
   .swiper2 {
@@ -75,7 +76,7 @@ div.coach__item {
 
   .coach__btn {
     background: transparent;
-    top: 62%;
+    top: 57.6%;
 
     &--left {
       left: 5%;
@@ -89,7 +90,8 @@ div.coach__item {
 
 @media (max-width: $mobile) {
   .coach {
-    margin-top: 66px;
+    padding-top: 67px;
+    padding-bottom: 70px;
   }
 
   .coach__title {
@@ -118,7 +120,7 @@ div.coach__item {
   }
 
   .coach__btn {
-    top: 58.1%;
+    top: 54.8%;
 
     &--left {
       left: 2.6%;
