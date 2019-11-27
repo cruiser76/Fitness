@@ -1,13 +1,13 @@
 .coach {
-  margin-top: 116px;
-  margin-bottom: 120px;
+  padding-top: 116px;
+  padding-bottom: 120px;
   position: relative;
 }
 
 .coach__title {
   @include indent-reset();
   padding-left: 2px;
-  padding-bottom: 54px;
+  margin-bottom: 54px;
   font-family: "Bebas Neue", sans-serif;
   font-size: 49px;
   line-height: 49px;
@@ -33,7 +33,7 @@ div.coach__item {
   position: absolute;
   border: none;
   background: transparent;
-  top: 63.4%;
+  top: 58.2%;
   cursor: pointer;
 
   &--left {

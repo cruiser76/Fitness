@@ -5,7 +5,7 @@
 }
 
 .pass__container {
-  padding-bottom: 118px;
+  padding: 115px 103px 118px;
   background: #f8f9fc;
 
   &::after {
@@ -23,9 +23,7 @@
 .pass__title {
   @include indent-reset();
   margin: 0 auto;
-  padding: 0 103px;
   max-width: $desktop;
-  padding-top: 115px;
   font-family: "Bebas Neue", sans-serif;
   font-size: 49px;
   line-height: 49px;
@@ -68,8 +66,7 @@
 .pass__list {
   position: relative;
   margin: 0 auto;
-  padding: 0 103px;
-  max-width: $desktop;
+  max-width: 1160px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -86,7 +83,7 @@
   }
 
   .pass__container {
-    padding-bottom: 60px;
+    padding: 96px 45px 60px;
 
     &::after {
       background: url("../img/bg-plate-tablet@1x.png") no-repeat 100% 106%;
@@ -98,8 +95,6 @@
   }
 
   .pass__title {
-    padding: 0 45px;
-    padding-top: 96px;
     font-size: 42px;
     line-height: 42px;
   }
@@ -117,7 +112,6 @@
 
   .pass__list {
     display: block;
-    padding: 0 45px;
   }
 
   .pass__item {
@@ -132,7 +126,7 @@
   }
 
   .pass__container {
-    padding-bottom: 39px;
+    padding: 67px 15px 39px;
 
     &::after {
       background: none;
@@ -141,7 +135,6 @@
 
   .pass__title {
     padding: 0 15px;
-    padding-top: 137px;
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.03em;
@@ -153,13 +146,14 @@
     margin: 0 auto 34px;
   }
 
+
+  .pass__list {
+    padding: 0;
+  }
+
   .pass__btn {
     padding: 0 0 11px;
     font-size: 16px;
-  }
-
-  .pass__list {
-    padding: 0 15px;
   }
 
   .pass__item {

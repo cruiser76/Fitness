@@ -8,12 +8,13 @@
   background: transparent url("../../img/bg-header-foto-desktop@1x.jpg") no-repeat 563px 50%;
   background-size: auto;
   padding-bottom: 93px;
+  padding-top: 30px;
 }
 
 .header__top {
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
+
 }
 
 .header__phone {
@@ -128,16 +129,13 @@
 
 @media (max-width: $tablet) {
   .header {
-    background: url("../img/bg-header-tablet@1x.png") no-repeat 50% 50%;
+    background: $blue url("../img/bg-header-tablet@1x.png") no-repeat 50% 50%;
     background-size: cover;
   }
 
   .header__container {
     background: transparent url("../../img/bg-header-foto-tablet@1x.jpg") no-repeat 400px 50%;
     padding-bottom: 104px;
-  }
-
-  .header__top {
     padding-top: 37px;
   }
 
@@ -194,6 +192,7 @@
   .header__container {
     background: none;
     padding-bottom: 80px;
+    padding-top: 15px;
   }
 
   .header__phone {
@@ -202,10 +201,6 @@
     & a {
       font-size: 20px;
     }
-  }
-
-  .header__top {
-    padding-top: 15px;
   }
 
   .header__description {

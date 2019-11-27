@@ -1,13 +1,12 @@
 .gym {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 103px;
   display: flex;
 }
 
 .gym__description {
-  width: 355px;
+  width: 410px;
   flex-shrink: 0;
-  margin-left: 60px;
+  padding-left: 60px;
   margin-right: auto;
 }
 
@@ -102,8 +101,7 @@
 @media (max-width: $tablet) {
   .gym {
     display: block;
-    padding-top: 95px;
-    padding-bottom: 182px;
+    padding: 95px 45px 182px;
   }
 
   .gym__title {
@@ -115,7 +113,7 @@
 
   .gym__description {
     width: 100%;
-    margin-left: 0;
+    padding-left: 0;
   }
 
   .gym__lead {
@@ -173,7 +171,7 @@
 
 @media (max-width: $mobile) {
   .gym {
-    padding: 68px 0 0;
+    padding: 68px 0 70px;
   }
 
   .gym__description {
