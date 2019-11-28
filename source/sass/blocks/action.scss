@@ -88,6 +88,7 @@
 }
 
 .action__item {
+  min-height: 211px;
   &:not(:last-of-type) {
     margin-bottom: 40px;
   }
@@ -140,12 +141,17 @@
   .action__inner {
     width: 100%;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   div.action__item {
     width: 47.8%;
     
     &:nth-of-type(n) {
+      margin-bottom: 30px;
+    }
+
+    &:nth-last-of-type(-n + 2) {
       margin-bottom: 0;
     }
   }
