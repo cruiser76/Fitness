@@ -7,12 +7,13 @@
   width: 410px;
   flex-shrink: 0;
   padding-left: 60px;
+  padding-top: 45px;
   margin-right: auto;
 }
 
 .gym__title {
   @include indent-reset();
-  padding-top: 45px;
+  
   font-family: "Bebas Neue", sans-serif;
   font-size: 49px;
   line-height: 49px;
@@ -114,6 +115,7 @@
   .gym__description {
     width: 100%;
     padding-left: 0;
+    padding-top: 0;
   }
 
   .gym__lead {
