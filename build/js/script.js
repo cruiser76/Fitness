@@ -19,6 +19,7 @@ window.addEventListener('resize', function() {
 
   if (document.documentElement.clientWidth < 768 && myTreners.slidesPerView !== 1) {
     videoPreview.src = 'img/video-preview-mobile@1x.jpg';
+    myTreners.destroy();
     myTreners = new Swiper ('.swiper2', {
       direction: 'horizontal',
       loop: true,
@@ -32,8 +33,9 @@ window.addEventListener('resize', function() {
       },
     });
 
-  } else if (document.documentElement.clientWidth > 767 && document.body.clientWidth < 1024 && myTreners.slidesPerView !== 2) {
-    myTreners = {};
+  } else if (document.documentElement.clientWidth > 767 && document.body.clientWidth < 1200 && myTreners.slidesPerView !== 2) {
+    videoPreview.src = 'img/video-preview-desktop@1x.jpg';
+    myTreners.destroy();
     myTreners = new Swiper ('.swiper2', {
       direction: 'horizontal',
       loop: true,
@@ -47,8 +49,8 @@ window.addEventListener('resize', function() {
       },
     });
 
-  } else if (document.documentElement.clientWidth > 1023 && myTreners.slidesPerView !== 4) {
-    myTreners = {};
+  } else if (document.documentElement.clientWidth > 1199 && myTreners.slidesPerView !== 4) {
+    myTreners.destroy();
     myTreners = new Swiper ('.swiper2', {
       direction: 'horizontal',
       loop: true,

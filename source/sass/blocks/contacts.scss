@@ -6,6 +6,7 @@
 
 .contacts__title {
   @include indent-reset();
+  font-weight: normal;
   padding-left: 17.7%;
   font-family: "Bebas Neue", sans-serif;
   font-size: 49px;

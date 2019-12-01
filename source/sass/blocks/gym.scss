@@ -13,7 +13,7 @@
 
 .gym__title {
   @include indent-reset();
-  
+  font-weight: normal;
   font-family: "Bebas Neue", sans-serif;
   font-size: 49px;
   line-height: 49px;
@@ -57,7 +57,7 @@
   position: absolute;
   display: block;
   bottom: 0;
-  left: 0;
+  left: 1px;
 
   &::before {
     content: "";

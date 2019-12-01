@@ -4,6 +4,7 @@
 
 .action__title {
   @include indent-reset();
+  font-weight: normal;
   margin-bottom: 54px;
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
@@ -89,6 +90,7 @@
 
 .action__item {
   min-height: 211px;
+
   &:not(:last-of-type) {
     margin-bottom: 40px;
   }
@@ -113,10 +115,9 @@
     margin-bottom: 45px;
   }
 
-  
-
   .action__promo {
-    width: 100%;
+    width: 768px;
+    margin: 0 auto;
     background: none;
     display: flex;
     margin-bottom: 30px;
@@ -146,7 +147,7 @@
 
   div.action__item {
     width: 47.8%;
-    
+
     &:nth-of-type(n) {
       margin-bottom: 30px;
     }
@@ -168,6 +169,8 @@
   }
 
   .action__promo {
+    width: 290px;
+    margin: 0 auto 30px;
     display: block;
     max-height: none;
   }

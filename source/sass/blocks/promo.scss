@@ -1,11 +1,13 @@
 .promo {
   height: 500px;
+
   background: $blue url("../img/bg-application-desktop@1x.jpg") no-repeat 85.3% 50%;
   background-clip: content-box;
 }
 
 .promo__title {
   @include indent-reset();
+  font-weight: normal;
   width: 60%;
   font-family: "Bebas Neue", sans-serif;
   font-size: 90px;
@@ -93,6 +95,8 @@
 
 @media (max-width: $tablet) {
   .promo {
+    width: 768px;
+    margin: 0 auto;
     background: none;
     height: 293px;
     display: flex;
@@ -155,6 +159,7 @@
 
 @media (max-width: $mobile) {
   .promo {
+    width: 320px;
     height: 584px;
     display: block;
   }

@@ -5,6 +5,7 @@
 
 .advantages__title {
   @include indent-reset();
+  font-weight: normal;
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
   font-size: 49px;
@@ -218,7 +219,7 @@
     width: 442px;
     padding: 0 20px 40px;
     position: static;
-    margin-bottom: 0;
+    margin: 0 60px;
 
     & .advantages__value {
       width: 113px;

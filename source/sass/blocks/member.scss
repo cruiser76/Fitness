@@ -87,6 +87,33 @@
       height: 294px;
     }
   }
+
+  .member__description {
+    padding-top: 18.6%;
+  }
+
+  .member__name {
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  .member__sport {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .member__achivment {
+    padding: 0 13px 0 26.1%;
+    font-size: 14px;
+    line-height: 150%;
+
+    &::before {
+      width: 7px;
+      height: 7px;
+      top: 16.2%;
+      left: 20%;
+    }
+  }
 }
 
 @media (max-width: $mobile) {

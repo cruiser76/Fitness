@@ -5,8 +5,9 @@
 }
 
 .pass__container {
-  padding: 115px 103px 118px;
+  padding: 115px 103px 78px;
   background: #f8f9fc;
+  text-align: center;
 
   &::after {
     background: url("../img/bg-plate-desktop@1x.png") no-repeat 100% 106%;
@@ -22,6 +23,7 @@
 
 .pass__title {
   @include indent-reset();
+  font-weight: normal;
   margin: 0 auto;
   max-width: $desktop;
   font-family: "Bebas Neue", sans-serif;
@@ -32,14 +34,21 @@
   color: #102654;
 }
 
-.pass__duration {
-  width: 342px;
+.pass__duration-container {
+  max-width: 1366px;
+  padding: 0 103px;
+  width: auto;
+  display: inline-block;
   margin: 0 auto 40px;
+}
+
+.pass__duration {
   padding-top: 38px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .pass__btn {
@@ -57,6 +66,15 @@
   line-height: 150%;
   color: #102654;
   cursor: pointer;
+  outline: none;
+
+  &:not(:last-of-type) {
+    margin-right: 47px;
+  }
+
+  &:hover {
+    text-shadow: 0 0 0.95px #102654;
+  }
 
   &--active {
     border-bottom: 2px solid $red;
@@ -69,12 +87,19 @@
   max-width: 1160px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   z-index: 2;
 }
 
 .pass__item {
   width: 31%;
+  flex-grow: 0;
+  flex-shrink: 1;
+  margin-bottom: 40px;
+
+  &:not(:nth-of-type(3n)) {
+    margin-right: 3.5%;
+  }
 }
 
 @media (max-width: $tablet) {
@@ -105,9 +130,13 @@
     line-height: 150%;
   }
 
+  .pass__duration-container {
+    padding: 0 45px;
+    margin: 0 auto 43px;
+  }
+
   .pass__duration {
     padding-top: 34px;
-    margin: 0 auto 43px;
   }
 
   .pass__list {
@@ -116,7 +145,10 @@
 
   .pass__item {
     width: 65.3%;
-    margin: 0 auto 40px;
+
+    &:nth-of-type(n) {
+      margin: 0 auto 40px;
+    }
   }
 }
 
@@ -126,7 +158,7 @@
   }
 
   .pass__container {
-    padding: 67px 15px 39px;
+    padding: 67px 15px 33px;
 
     &::after {
       background: none;
@@ -140,12 +172,16 @@
     letter-spacing: 0.03em;
   }
 
-  .pass__duration {
-    width: 290px;
-    padding-top: 25px;
+
+  .pass__duration-container {
+    padding: 0;
     margin: 0 auto 34px;
   }
 
+  .pass__duration {
+    padding-top: 24px;
+    width: 100%;
+  }
 
   .pass__list {
     padding: 0;
@@ -154,10 +190,18 @@
   .pass__btn {
     padding: 0 0 11px;
     font-size: 16px;
+
+    &:not(:last-of-type),
+    &:not(:nth-of-type(3n)) {
+      margin-right: 45px;
+    }
   }
 
   .pass__item {
     width: 100%;
-    margin: 0 auto 35px;
+
+    &:nth-of-type(n) {
+      margin: 0 auto 39px;
+    }
   }
 }

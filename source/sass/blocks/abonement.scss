@@ -72,7 +72,6 @@
     margin-bottom: 40px;
 
     &::after {
-      margin-right: -22px;
       margin-left: -101px;
     }
   }
@@ -88,6 +87,7 @@
     &::after {
       font-size: 80px;
       line-height: 150%;
+      margin-left: -81px;
       margin-top: -74px;
     }
   }
