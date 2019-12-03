@@ -68,10 +68,16 @@
   font-size: 14px;
   line-height: 21px;
   color: #102654;
+  outline: none;
+
+  &:focus {
+    text-shadow: 0 0 0.95px #102654;
+  }
 }
 
 @media (max-width: $tablet) {
   .contacts__container {
+    padding-top: 67px;
     margin: 0 auto;
   }
 
@@ -79,7 +85,7 @@
     font-size: 42px;
     line-height: 42px;
     padding-left: 91px;
-    margin-bottom: 37px;
+    margin-bottom: 35px;
   }
 
   .contacts__type {

@@ -18,7 +18,7 @@
   }
 
   &:nth-of-type(1) {
-    margin-right: 276px;
+    margin-right: 279px;
   }
 
   &:nth-of-type(7n) {
@@ -27,13 +27,19 @@
 }
 
 .nav__item > a {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+  outline: none;
 
   &:hover {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus {
     color: rgba(255, 255, 255, 0.3);
   }
 }
@@ -53,7 +59,7 @@
     }
 
     &:nth-of-type(1) {
-      margin-right: 62px;
+      margin-right: 64px;
     }
 
     &:nth-of-type(7n) {

@@ -17,7 +17,7 @@
   font-family: "Bebas Neue", sans-serif;
   font-size: 49px;
   line-height: 49px;
-  letter-spacing: 0.03em;
+  letter-spacing: 1.7px;
   color: #102654;
 }
 
@@ -83,8 +83,17 @@
     border: 2px solid transparent;
     border-image-source: url("../img/border-img.png");
     border-image-slice: fill 1.5;
+    outline: none;
 
     &:hover {
+      background-image: linear-gradient(44.89deg, #b80027 25.38%, #003d85 74.89%);
+
+      & svg {
+        fill: rgba(255, 255, 255, 0.3);
+      }
+    }
+
+    &:focus {
       background-image: linear-gradient(44.89deg, #b80027 25.38%, #003d85 74.89%);
 
       & svg {
@@ -102,7 +111,7 @@
 @media (max-width: $tablet) {
   .gym {
     display: block;
-    padding: 95px 45px 182px;
+    padding: 98px 45px 182px;
   }
 
   .gym__title {
@@ -121,7 +130,7 @@
   .gym__lead {
     width: 279px;
     margin: 0 auto;
-    padding: 13px 0 25px;
+    padding: 10px 0 25px;
   }
 
   .gym__text {
@@ -173,7 +182,7 @@
 
 @media (max-width: $mobile) {
   .gym {
-    padding: 68px 0 70px;
+    padding: 67px 0 70px;
   }
 
   .gym__description {
@@ -184,6 +193,7 @@
     font-size: 32px;
     line-height: 32px;
     text-align: left;
+    letter-spacing: 1.1px;
   }
 
   .gym__lead {

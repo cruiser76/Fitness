@@ -10,7 +10,7 @@
   text-align: center;
 
   &::after {
-    background: url("../img/bg-plate-desktop@1x.png") no-repeat 100% 106%;
+    background: transparent url("../img/bg-plate-desktop@1x.png") no-repeat 100% 106%;
     position: absolute;
     content: "";
     right: 0;
@@ -29,7 +29,7 @@
   font-family: "Bebas Neue", sans-serif;
   font-size: 49px;
   line-height: 49px;
-  letter-spacing: 0.03em;
+  letter-spacing: 1.7px;
   text-align: center;
   color: #102654;
 }
@@ -76,6 +76,10 @@
     text-shadow: 0 0 0.95px #102654;
   }
 
+  &:focus {
+    text-shadow: 0 0 0.95px #102654;
+  }
+
   &--active {
     border-bottom: 2px solid $red;
   }
@@ -87,15 +91,15 @@
   max-width: 1160px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  z-index: 2;
+  justify-content: space-between;
 }
 
-.pass__item {
+.pass__list > .pass__item {
   width: 31%;
   flex-grow: 0;
   flex-shrink: 1;
   margin-bottom: 40px;
+  z-index: 2;
 
   &:not(:nth-of-type(3n)) {
     margin-right: 3.5%;
@@ -108,10 +112,10 @@
   }
 
   .pass__container {
-    padding: 96px 45px 60px;
+    padding: 98px 45px 60px;
 
     &::after {
-      background: url("../img/bg-plate-tablet@1x.png") no-repeat 100% 106%;
+      background: transparent url("../img/bg-plate-tablet@1x.png") no-repeat 100% 106%;
       right: 0;
       bottom: -27px;
       width: 347px;
@@ -125,7 +129,7 @@
   }
 
   .pass__btn {
-    padding: 0 5px 11px;
+    padding: 0 4px 11px;
     font-size: 18px;
     line-height: 150%;
   }
@@ -136,14 +140,14 @@
   }
 
   .pass__duration {
-    padding-top: 34px;
+    padding-top: 32px;
   }
 
   .pass__list {
     display: block;
   }
 
-  .pass__item {
+  .pass__list > .pass__item {
     width: 65.3%;
 
     &:nth-of-type(n) {
@@ -154,11 +158,11 @@
 
 @media (max-width: $mobile) {
   .pass {
-    padding-bottom: 69px;
+    padding-bottom: 71px;
   }
 
   .pass__container {
-    padding: 67px 15px 33px;
+    padding: 68px 15px 33px;
 
     &::after {
       background: none;
@@ -169,7 +173,8 @@
     padding: 0 15px;
     font-size: 32px;
     line-height: 32px;
-    letter-spacing: 0.03em;
+    letter-spacing: 1.3px;
+    margin-bottom: 1px;
   }
 
 
@@ -197,11 +202,12 @@
     }
   }
 
-  .pass__item {
+  .pass__list .pass__item {
     width: 100%;
+    z-index: initial;
 
     &:nth-of-type(n) {
-      margin: 0 auto 39px;
+      margin: 0 auto 34px;
     }
   }
 }

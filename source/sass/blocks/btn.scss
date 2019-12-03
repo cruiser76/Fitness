@@ -14,6 +14,12 @@
   color: #102654;
   cursor: pointer;
 
+  &:focus {
+    background-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+    outline: none;
+    color: white;
+  }
+
   &:hover {
     background-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
     outline: none;
@@ -37,6 +43,12 @@
       border-color: rgba(255, 255, 255, 0.3);
       background-image: none;
     }
+
+    &:focus {
+      color: rgba(255, 255, 255, 0.3);
+      border-color: rgba(255, 255, 255, 0.3);
+      background-image: none;
+    }
   }
 
   &--promo {
@@ -46,6 +58,12 @@
     color: #ffffff;
 
     &:hover {
+      color: rgba(255, 255, 255, 0.3);
+      border-color: rgba(255, 255, 255, 0.3);
+      background-image: none;
+    }
+
+    &:focus {
       color: rgba(255, 255, 255, 0.3);
       border-color: rgba(255, 255, 255, 0.3);
       background-image: none;

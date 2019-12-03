@@ -1,15 +1,11 @@
 .header {
   width: 100%;
-  position: absolute;
-  top: 28px;
-}
-
-.header__container {
-  width: 100%;
   display: flex;
   justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 0;
+  margin-bottom: -5px;
 }
-
 
 .header__phone {
   width: 154px;
@@ -20,6 +16,11 @@
     line-height: 26px;
     letter-spacing: 0.03em;
     color: #ffffff;
+
+    &:focus {
+      color: rgba(255, 255, 255, 0.3);
+      outline: none;
+    }
   }
 
   &:hover a {
@@ -33,11 +34,12 @@
 
 @media (max-width: $tablet) {
   .header {
-    top: 38px;
+    padding-top: 37px;
+    margin-bottom: 0;
   }
 
   .header__phone {
-    width: 139px;
+    width: 138px;
 
     & a {
       font-size: 24px;
@@ -48,7 +50,7 @@
 
 @media (max-width: $mobile) {
   .header {
-    top: 15px;
+    padding-top: 15px;
   }
 
   .header__phone {

@@ -75,8 +75,14 @@
   text-transform: uppercase;
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
+  outline: none;
 
   &:hover {
+    color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus {
     color: rgba(255, 255, 255, 0.3);
     border-color: rgba(255, 255, 255, 0.3);
   }
@@ -106,33 +112,28 @@
 
 @media (max-width: $tablet) {
   .action {
-    padding-top: 96px;
+    padding-top: 98px;
   }
 
   .action__title {
     font-size: 42px;
     line-height: 42px;
-    margin-bottom: 45px;
+    margin-bottom: 43px;
   }
 
   .action__promo {
-    width: 768px;
+    width: 678px;
+    height: 462px;
     margin: 0 auto;
-    background: none;
     display: flex;
     margin-bottom: 30px;
+    background: $red url("../img/bg-action-tablet@1x.jpg") no-repeat right 0 top 0;
+    background-size: 399px 462px;
   }
 
   .action__description {
-    width: 41.3%;
+    width: 279px;
     padding-bottom: 43px;
-  }
-
-  .action__promo-img {
-    width: 58.7%;
-    height: 462px;
-    background: #1c3374 url("../img/bg-action-tablet@1x.jpg") no-repeat right 0 top 0;
-    background-size: cover;
   }
 
   .action__lead {
@@ -140,7 +141,8 @@
   }
 
   .action__inner {
-    width: 100%;
+    width: 678px;
+    margin: 0 auto;
     justify-content: space-between;
     align-items: flex-start;
   }
@@ -166,27 +168,24 @@
   .action__title {
     font-size: 32px;
     line-height: 32px;
+    margin-bottom: 45px;
   }
 
   .action__promo {
     width: 290px;
     margin: 0 auto 30px;
     display: block;
-    max-height: none;
+    height: 598px;
+    max-height: 598px;
+    background: $red url("../img/bg-action-mobile@1x.jpg") no-repeat right 0 bottom 0;
+    background-size: 290px 299px;
   }
 
   .action__description {
     width: 100%;
+    height: 299px;
     padding: 33px 49px 43px;
     text-align: center;
-  }
-
-  .action__promo-img {
-    width: 100%;
-    min-height: 299px;
-    height: auto;
-    background: #1c3374 url("../img/bg-action-mobile@1x.jpg") no-repeat right 0 top 0;
-    background-size: cover;
   }
 
   .action__lead {
@@ -199,7 +198,7 @@
   }
 
   .action__inner {
-    width: 100%;
+    width: 290px;
     display: block;
   }
 

@@ -41,8 +41,14 @@
   text-transform: uppercase;
   color: #1c3374;
   border-bottom: 1px solid #1c3374;
+  outline: none;
 
   &:hover {
+    color: $red;
+    border-color: $red;
+  }
+
+  &:focus {
     color: $red;
     border-color: $red;
   }

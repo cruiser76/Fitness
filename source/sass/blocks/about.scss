@@ -1,14 +1,9 @@
 .about {
-  background: $blue url("../img/bg-header-desktop@1x.png") no-repeat 50% 50%;
-  background-size: cover;
-}
-
-.about__container {
   height: 100%;
-  background: transparent url("../img/bg-header-foto-desktop@1x.jpg") no-repeat 563px 50%;
+  background: transparent url("../img/bg-header-foto-desktop@1x.jpg") no-repeat 563px 0;
   background-size: auto;
   padding-bottom: 93px;
-  padding-top: 168px;
+  padding-top: 116px;
   display: flex;
 }
 
@@ -37,7 +32,7 @@
 
 .about__description h1 {
   @include indent-reset();
-  text-shadow: 0 -3px 0, 3px -3px 0, 3px 0 0;
+  text-shadow: 0 -5px 0, 5px -5px 0, 5px 0 0;
   font-weight: normal;
   width: 100%;
   font-family: "Bebas Neue", sans-serif;
@@ -45,7 +40,7 @@
   font-size: 109px;
   line-height: 109px;
   text-align: right;
-  letter-spacing: 3.4px;
+  letter-spacing: 4.3px;
   color: #ffffff;
 }
 
@@ -89,22 +84,22 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-top: 18.3px;
+  outline: none;
 
   &:hover {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus {
     color: rgba(255, 255, 255, 0.3);
   }
 }
 
 @media (max-width: $tablet) {
   .about {
-    background: $blue url("../img/bg-header-tablet@1x.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-
-  .about__container {
-    background: transparent url("../../img/bg-header-foto-tablet@1x.jpg") no-repeat 400px 50%;
+    background: transparent url("../../img/bg-header-foto-tablet@1x.jpg") no-repeat 399px 17px;
     padding-bottom: 103px;
-    padding-top: 135px;
+    padding-top: 70px;
   }
 
   .about__bottom {
@@ -130,13 +125,13 @@
 
   .about__description h1 {
     text-shadow: 0 -3px 0, 3px -3px 0, 3px 0 0;
-    letter-spacing: 2.7px;
+    letter-spacing: 3.3px;
     font-size: 86px;
     line-height: 86px;
   }
 
   .about__features {
-    width: 113px;
+    width: 114px;
     padding-bottom: 12px;
     top: 99px;
   }
@@ -148,14 +143,9 @@
 
 @media (max-width: $mobile) {
   .about {
-    background: url("../img/bg-header-mobile@1x.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-
-  .about__container {
     background: none;
-    padding-bottom: 80px;
-    padding-top: 112px;
+    padding-bottom: 78px;
+    padding-top: 71px;
   }
 
   .about__phone {

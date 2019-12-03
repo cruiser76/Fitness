@@ -11,7 +11,7 @@
   font-family: "Bebas Neue", sans-serif;
   font-size: 49px;
   line-height: 49px;
-  letter-spacing: 0.03em;
+  letter-spacing: 2px;
   color: #102654;
 }
 
@@ -37,6 +37,10 @@ div.coach__item {
   cursor: pointer;
   outline: none;
 
+  &:focus svg {
+    stroke: #000000;
+  }
+
   &--left {
     left: 3%;
   }
@@ -52,15 +56,16 @@ div.coach__item {
 
 @media (max-width: $tablet) {
   .coach {
-    padding-top: 95px;
+    padding-top: 98px;
     padding-bottom: 100px;
   }
 
   .coach__title {
-    margin-bottom: 45px;
+    margin-bottom: 43px;
     font-size: 42px;
     line-height: 42px;
     text-align: center;
+    letter-spacing: 1.8px;
   }
 
   .swiper2 {
@@ -99,6 +104,7 @@ div.coach__item {
   .coach__title {
     font-size: 32px;
     line-height: 32px;
+    margin-bottom: 45px;
   }
 
   .swiper2 {

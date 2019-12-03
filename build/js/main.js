@@ -156,13 +156,14 @@ try {
 }
 
 if (feedBackForm) {
-  IMask(tel, {
+  var mask = IMask(tel, {
     mask: '+{0}(000)000-00-00',
   });
 
   if (isStorageSupport) {
     userName.value = storage.userName;
     tel.value = storage.tel;
+    mask.updateValue();
   }
 
   feedBackForm.addEventListener('submit', function (evt) {
@@ -179,6 +180,7 @@ if (feedBackForm) {
 
 // абонементы
 var passBtns = document.querySelectorAll('.pass__btn');
+passBtns[0].classList.add('pass__btn--active');
 var durationPass = document.querySelector('.pass__duration');
 durationPass.addEventListener('click', function(evt) {
   if (evt.target.tagName !== 'BUTTON') {

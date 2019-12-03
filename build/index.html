@@ -38,36 +38,32 @@
       <path d="M11.5481 0.0049936L8.66986 0C5.43624 0 3.34653 2.31828 3.34653 5.90643V8.62969H0.452578C0.202506 8.62969 0 8.84891 0 9.11932V13.065C0 13.3354 0.202736 13.5544 0.452578 13.5544H3.34653V23.5106C3.34653 23.781 3.54904 24 3.79911 24H7.5749C7.82497 24 8.02748 23.7808 8.02748 23.5106V13.5544H11.4112C11.6613 13.5544 11.8638 13.3354 11.8638 13.065L11.8652 9.11932C11.8652 8.98948 11.8174 8.86514 11.7326 8.77326C11.6479 8.68138 11.5324 8.62969 11.4123 8.62969H8.02748V6.32115C8.02748 5.21157 8.27201 4.64829 9.60873 4.64829L11.5477 4.64755C11.7975 4.64755 12 4.42833 12 4.15817V0.494367C12 0.224462 11.7977 0.00549296 11.5481 0.0049936Z"></path>
     </symbol>
   </svg>
-  <header class="header">
-    <div class="header__container container">
+  <div class="wrapper">
+    <header class="header container">
       <div class="header__logo logo"><a href="#" title="На главную">Supergym</a></div>
       <div class="header__phone"><a href="tel:8800555555555" aria-label="Телефон">8-800-555-55-55</a></div>
-
-    </div>
-  </header>
-  <main class="main">
-    <section class="about">
-      <div class="about__container container">
-        <div class="about__description">
-          <p class="about__town">Омск</p>
-          <div class="about__description-inner">
-            <div class="about__features">
-              <p>Тренажёрный зал</p>
-              <p>Групповые занятия</p>
-              <p>Кардио-зона</p>
-            </div>
-            <h1 class="about__title">Фитнес Центр</h1>
+    </header>
+    <section class="about container">
+      <div class="about__description">
+        <p class="about__town">Омск</p>
+        <div class="about__description-inner">
+          <div class="about__features">
+            <p>Тренажёрный зал</p>
+            <p>Групповые занятия</p>
+            <p>Кардио-зона</p>
           </div>
-          <a class="about__btn btn btn--about" href="#anchor-pass" title="Купить абонемент">Купить абонемент</a>
+          <h1 class="about__title">Фитнес Центр</h1>
         </div>
-        <div class="about__social">
-          <a title="Фейсбук" href="#">fb</a>
-          <a title="Вконтакте" href="#">vk</a>
-          <a title="Инстаграмм" href="#">ig</a>
-        </div>
+        <a class="about__btn btn btn--about" href="#anchor-pass" title="Купить абонемент">Купить абонемент</a>
+      </div>
+      <div class="about__social">
+        <a title="Фейсбук" href="#">fb</a>
+        <a title="Вконтакте" href="#">vk</a>
+        <a title="Инстаграмм" href="#">ig</a>
       </div>
     </section>
-
+  </div>
+  <main class="main">
     <section class="gym container">
       <div class="gym__description">
         <h2 class="gym__title">Тренажерный зал</h2>
@@ -100,10 +96,9 @@
         <h2 class="pass__title">Абонементы</h2>
         <div class="pass__duration-container">
           <div class="pass__duration">
-            <button class="pass__btn pass__btn--active" type="button">1 месяц</button>
+            <button class="pass__btn" type="button">1 месяц</button>
             <button class="pass__btn" type="button">6 месяцев</button>
             <button class="pass__btn" type="button">12 месяцев</button>
-
           </div>
         </div>
 
@@ -161,7 +156,6 @@
         <p class="promo__lead">Ежегодные соревнования по CrossFit</p>
         <a href="#" class="btn btn--promo promo__btn">Заполнить заявку</a>
       </div>
-      <div class="promo__img"></div>
     </section>
 
     <section class="coach container">
@@ -361,7 +355,7 @@
               <p class="advantages__description-text">Добивайтесь своих целей быстрее с профессиональным тренером</p>
             </div>
           </div>
-
+          
         </div>
       </div>
     </section>
@@ -376,7 +370,6 @@
             <h3 class="action__lead">Безлимитный абонемент в тренажерный зал</h3>
             <a class="action__link" href="#" title="подробнее">Подробнее</a>
           </div>
-          <div class="action__promo-img"></div>
         </div>
 
         <div class="action__inner">
@@ -423,7 +416,7 @@
                   <p class="reviews__text">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе
                     всегда
                     чисто, тренажеры обновляют,
-                    персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
+                    персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей&raquo;
                   </p>
                 </div>
               </div>
@@ -436,7 +429,7 @@
                   <p class="reviews__text">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе
                     всегда
                     чисто, тренажеры обновляют,
-                    персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
+                    персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей&raquo;
                   </p>
                 </div>
               </div>
@@ -539,9 +532,8 @@
       </div>
     </div>
   </footer>
-  <script src="./js/swiper.min.js"></script>
-  <script src="https://unpkg.com/imask"></script>
-  <script src="./js/script.js"></script>
+  <script src="./js/vendor.js"></script>
+  <script src="./js/main.js"></script>
 
 </body>
 
