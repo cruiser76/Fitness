@@ -148,8 +148,6 @@
   }
 
   div.action__item {
-    width: 47.8%;
-
     &:nth-of-type(n) {
       margin-bottom: 30px;
     }
@@ -203,7 +201,6 @@
   }
 
   div.action__item {
-    width: 100%;
     margin-bottom: 30px;
 
     &:not(:last-of-type) {

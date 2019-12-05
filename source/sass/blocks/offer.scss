@@ -1,7 +1,7 @@
 .offer {
   width: 560px;
   padding: 18px 5px 26px 28px;
-  border: 7px solid transparent;
+  border: 7px solid;
   border-image: linear-gradient(to right bottom, $red 0%, $blue 100%);
   border-image-slice: 1;
   display: flex;
@@ -64,6 +64,7 @@
 
 @media (max-width: $mobile) {
   .offer {
+    width: 290px;
     padding: 30px 20px 5px;
     text-align: center;
   }
