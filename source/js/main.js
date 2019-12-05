@@ -190,6 +190,7 @@ var passBtns = document.querySelectorAll('.pass__btn');
 passBtns[0].classList.add('pass__btn--active');
 var durationPass = document.querySelector('.pass__duration');
 durationPass.addEventListener('click', function (evt) {
+  passBtns = document.querySelectorAll('.pass__btn');
   if (evt.target.tagName !== 'BUTTON') {
     return;
   }

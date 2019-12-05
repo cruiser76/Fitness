@@ -92,6 +92,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .pass__list > .pass__item {
@@ -99,7 +100,6 @@
   flex-grow: 0;
   flex-shrink: 1;
   margin-bottom: 40px;
-  z-index: 2;
 
   &:not(:nth-of-type(3n)) {
     margin-right: 3.5%;
@@ -202,7 +202,7 @@
     }
   }
 
-  .pass__list .pass__item {
+  .pass__list > .pass__item {
     width: 100%;
     z-index: initial;
 

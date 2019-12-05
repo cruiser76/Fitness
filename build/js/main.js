@@ -1,6 +1,6 @@
 'use strict';
 var videoPreview = document.querySelector('.gym__video img');
-
+// eslint-disable-next-line
 var mySwiper = new Swiper ('.swiper1', {
   // Optional parameters
   direction: 'horizontal',
@@ -15,11 +15,12 @@ var mySwiper = new Swiper ('.swiper1', {
 
 var myTreners = {};
 
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
 
   if (document.documentElement.clientWidth < 768 && myTreners.slidesPerView !== 1) {
     videoPreview.src = 'img/video-preview-mobile@1x.jpg';
     myTreners.destroy();
+    // eslint-disable-next-line
     myTreners = new Swiper ('.swiper2', {
       direction: 'horizontal',
       loop: true,
@@ -36,7 +37,8 @@ window.addEventListener('resize', function() {
   } else if (document.documentElement.clientWidth > 767 && document.body.clientWidth < 1200 && myTreners.slidesPerView !== 2) {
     videoPreview.src = 'img/video-preview-desktop@1x.jpg';
     myTreners.destroy();
-    myTreners = new Swiper ('.swiper2', {
+    // eslint-disable-next-line
+    myTreners = new Swiper('.swiper2', {
       direction: 'horizontal',
       loop: true,
       slidesPerView: 2,
@@ -51,7 +53,8 @@ window.addEventListener('resize', function() {
 
   } else if (document.documentElement.clientWidth > 1199 && myTreners.slidesPerView !== 4) {
     myTreners.destroy();
-    myTreners = new Swiper ('.swiper2', {
+    // eslint-disable-next-line
+    myTreners = new Swiper('.swiper2', {
       direction: 'horizontal',
       loop: true,
       slidesPerView: 4,
@@ -68,7 +71,8 @@ window.addEventListener('resize', function() {
 
 if (document.body.clientWidth < 768) {
   videoPreview.src = 'img/video-preview-mobile@1x.jpg';
-  myTreners = new Swiper ('.swiper2', {
+  // eslint-disable-next-line
+  myTreners = new Swiper('.swiper2', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 1,
@@ -82,7 +86,8 @@ if (document.body.clientWidth < 768) {
   });
 
 } else if (document.body.clientWidth > 767 && document.body.clientWidth < 1024) {
-  myTreners = new Swiper ('.swiper2', {
+  // eslint-disable-next-line
+  myTreners = new Swiper('.swiper2', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 2,
@@ -95,6 +100,7 @@ if (document.body.clientWidth < 768) {
     },
   });
 } else if (document.body.clientWidth > 1023) {
+  // eslint-disable-next-line
   myTreners = new Swiper ('.swiper2', {
     direction: 'horizontal',
     loop: true,
@@ -156,6 +162,7 @@ try {
 }
 
 if (feedBackForm) {
+  // eslint-disable-next-line
   var mask = IMask(tel, {
     mask: '+{0}(000)000-00-00',
   });
@@ -182,7 +189,8 @@ if (feedBackForm) {
 var passBtns = document.querySelectorAll('.pass__btn');
 passBtns[0].classList.add('pass__btn--active');
 var durationPass = document.querySelector('.pass__duration');
-durationPass.addEventListener('click', function(evt) {
+durationPass.addEventListener('click', function (evt) {
+  passBtns = document.querySelectorAll('.pass__btn');
   if (evt.target.tagName !== 'BUTTON') {
     return;
   }
