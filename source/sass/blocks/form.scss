@@ -52,11 +52,12 @@
     }
 
     &:hover {
-      outline: 2px solid cyan;
+      border-bottom: 2px solid cyan;
     }
 
     &:focus {
-      outline: 2px solid cyan;
+      border-bottom: 2px solid cyan;
+      outline: none;
     }
   }
 }

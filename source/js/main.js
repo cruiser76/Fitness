@@ -164,7 +164,7 @@ try {
 if (feedBackForm) {
   // eslint-disable-next-line
   var mask = IMask(tel, {
-    mask: '+{0}(000)000-00-00',
+    mask: '+7(000)000-00-00',
   });
 
   if (isStorageSupport) {
@@ -174,7 +174,10 @@ if (feedBackForm) {
   }
 
   feedBackForm.addEventListener('submit', function (evt) {
+
+    console.log(tel.value);
     if (!userName.value || !tel.value) {
+      on
       evt.preventDefault();
     } else {
       if (isStorageSupport) {
