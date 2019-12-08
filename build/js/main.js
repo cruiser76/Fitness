@@ -161,6 +161,12 @@ try {
   isStorageSupport = false;
 }
 
+var fillForm = function () {
+  userName.value = storage.userName;
+  tel.value = storage.tel;
+  mask.updateValue();
+}
+
 if (feedBackForm) {
   // eslint-disable-next-line
   var mask = IMask(tel, {
@@ -168,17 +174,16 @@ if (feedBackForm) {
   });
 
   if (isStorageSupport) {
-    userName.value = storage.userName;
-    tel.value = storage.tel;
-    mask.updateValue();
+    fillForm();
   }
 
   feedBackForm.addEventListener('submit', function (evt) {
-
-    console.log(tel.value);
     if (!userName.value || !tel.value) {
-      on
       evt.preventDefault();
+    } else if (tel.value.length < 16) {
+      evt.preventDefault();
+      tel.value = 'Вы ввели не полный номер';
+      setTimeout(fillForm, 1000);
     } else {
       if (isStorageSupport) {
         localStorage.setItem('userName', userName.value);
