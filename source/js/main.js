@@ -182,8 +182,11 @@ if (feedBackForm) {
       evt.preventDefault();
     } else if (tel.value.length < 16) {
       evt.preventDefault();
+      var exch = tel.value;
       tel.value = 'Вы ввели не полный номер';
-      setTimeout(fillForm, 1000);
+      setTimeout(function () {
+        tel.value = exch;
+      }, 1000);
     } else {
       if (isStorageSupport) {
         localStorage.setItem('userName', userName.value);
